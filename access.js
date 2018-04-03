@@ -57,12 +57,12 @@ function addEdge(startEdge, endEdge, edgeGain){
 };
 
 //BUG EXISTS HERE, NEED TO DEBUG.
-function changeEdgeGain(startNode, endNode, edgeGain){
-    startNode = protectInput(startNode);
-    endNode = protectInput(endNode);
+function changeEdgeGain(startEdge, endEdge, edgeGain){
+    startEdge = protectInput(startEdge);
+    endEdge = protectInput(endEdge);
     edgeGain = protectInput(edgeGain);
-    if(startNode != null && endNode != null && edgeGain != null){
-        var edge = cy.$("#"+startNode+endNode);
+    if(startEdge != null && endEdge != null && edgeGain != null){
+        var edge = cy.$("#"+startEdge+endEdge);
         if(edge.length != 0){
             edge.data("gain", edgeGain);
             console.log(edge.data("gain"));

@@ -40,7 +40,7 @@ $changeEdgeWindow.dialog({
             startNode = $("#changeEdgeStartNode").val();
             endNode = $("#changeEdgeEndNode").val();
             edgeGain = $("#newEdgeGain").val();
-            changeEdgeGain(startEdge, endEdge, edgeGain);
+            changeEdgeGain(startNode, endNode, edgeGain);
             $(this).dialog("close");
        },
         Cancel: function () {
