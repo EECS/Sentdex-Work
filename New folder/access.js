@@ -147,8 +147,7 @@ function getNodeNumber(){
 };
 
 function exportJson(){
-    console.log("Here");
-    cy.json();
+    console.log(cy.json());
 };
 
 function protectInput(input){
